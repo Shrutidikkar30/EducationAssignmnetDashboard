@@ -1,0 +1,153 @@
+@charset "ISO-8859-1";
+.infinity-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 80vh;
+
+}
+
+@media (min-width: 768px) {
+    .infinity-container {
+            background: url('') center no-repeat;
+          background-size: cover;
+        }
+    .infinity-form {
+    /*  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.1);*/
+        border-radius: 10px;
+        width: 28rem ;
+        height: 33rem;
+    }
+    .title
+    {
+        font-size: 18px;
+        margin: 21px 0 0 15px;
+    }
+ 
+}
+
+.infinity-form{
+    background: white;
+}
+.title
+{
+    font-size: 30px;
+    margin: 25px 0 0 15px;
+    text-transform: uppercase;
+    color: hotpink;
+    letter-spacing: 2px;
+}
+.infinity-form img
+{
+    border-radius: 50%;
+}
+.infinity-form h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.infinity-form .form-input
+{
+    position: relative;
+}
+
+.infinity-form .form-input input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #777;
+    outline: none;
+    background: transparent;
+    padding-left: 40px;
+    font-weight: bold;
+    color: #777;
+}
+
+.infinity-form .form-input span {
+    position: absolute;
+    top: 8px;
+    padding-left: 10px;
+    color: #777;
+}
+
+.infinity-form .form-input input::placeholder {
+    padding-left: 0px;
+}
+
+.infinity-form .form-input input:focus,
+.infinity-form .form-input input:valid
+{
+    border-bottom: 2px solid #b41edad3;
+}
+
+.infinity-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+
+  background-color: #b41edad3 !important;
+  border:0px;
+}
+
+.infinity-form button[type="submit"] {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #71b7e6, #b41edad3);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.infinity-form button[type="submit"]:hover {
+   transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #b41edad3);
+}
+
+.forget-link , .login-link , .register-link {
+    color: #b41edad3;
+    font-weight: bold;
+}
+
+.forget-link:hover , .login-link:hover , .register-link:hover {
+    color: #b41edad3;
+    text-decoration: none;
+}
+.card-body
+{
+    margin-top: -50px;
+}
+.card-body .customer {
+    width: 210px;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem .6rem;
+    border: solid #b41edad3;
+  }
+
+.card-body .info {
+    display: flex;
+    align-items: center;
+}
+
+.card-body .info img {
+    border-radius: 50%;
+    margin-right: 1rem;
+    width: 45px;
+    height: 45px;
+}
+
+.card-body .info h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+}
+.card-body a 
+{
+    text-decoration: none;
+}
